@@ -1,0 +1,44 @@
+.main{
+    background-color: lightgray;    
+    width: 25%;
+    display: grid;
+    grid-template-rows: auto auto auto; 
+    grid-template-columns: auto; 
+    gap: 0em;
+    margin-left: 10em;
+    margin-top: 10em;
+    }
+    
+    
+    .header{
+        background-color:rgb(206, 205, 203);
+        text-align: center;
+    }
+    
+    .visor {
+        background-color: rgb(236, 234, 231);
+        text-align: right;
+        height: 3em;
+        align-items: center;
+        font-size: 2em;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .teclado{
+    background-color: lightgrey;     
+    display: grid;
+    justify-items: stretch; /* Cambiado de center a stretch para que los botones llenen la celda */
+    align-items: stretch; /* Cambiado de center a stretch para que los botones llenen la celda */
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /*column-gap: 1em;  Espaciado específico entre columnas */
+    /*padding-left: 1em;
+    padding-right: 1em;*/
+    };
+    
+    
+    
+    
+    
+    

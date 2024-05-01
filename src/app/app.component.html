@@ -1,28 +1,32 @@
-<div class="main">
-  <div class="header" [style.color]="headerColor">CALC</div>
-  <div class="visor">
-    <app-visor [_display]="_currentDisplay"></app-visor>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarNav"
+    aria-controls="navbarNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" [routerLink]="['']">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['features']">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['pricing']">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['aboutus']">About Us</a>
+      </li>
+    </ul>
   </div>
-  <div class="teclado">
-    <app-boton [_simbol]="'%'"></app-boton>
-    <app-boton [_simbol]="'CE'" (click)="clearOperations()"></app-boton>
-    <app-boton [_simbol]="'C'" (click)="clearOperations()"></app-boton>
-    <app-boton [_simbol]="'/'" (click)="getValue($event)"></app-boton>
-    <app-boton [_simbol]="'7'" (click)="getValue($event)"></app-boton>
-    <app-boton [_simbol]="'8'" (click)="getValue($event)"></app-boton>
-    <app-boton [_simbol]="'9'" (click)="getValue($event)"></app-boton>
-    <app-boton [_simbol]="'*'" (click)="getValue($event)"></app-boton>
-    <app-boton [_simbol]="'4'" (click)="getValue($event)"></app-boton>
-    <app-boton [_simbol]="'5'" (click)="getValue($event)"></app-boton>
-    <app-boton [_simbol]="'6'" (click)="getValue($event)"></app-boton>
-    <app-boton [_simbol]="'-'" (click)="getValue($event)"></app-boton>
-    <app-boton [_simbol]="'1'" (click)="getValue($event)"></app-boton>
-    <app-boton [_simbol]="'2'" (click)="getValue($event)"></app-boton>
-    <app-boton [_simbol]="'3'" (click)="getValue($event)"></app-boton>
-    <app-boton [_simbol]="'+'" (click)="getValue($event)"></app-boton>
-    <app-boton [_simbol]="'+/-'"></app-boton>
-    <app-boton [_simbol]="'0'" (click)="getValue($event)"></app-boton>
-    <app-boton [_simbol]="','"></app-boton>
-    <app-boton [_simbol]="'='" (click)="getValue($event)"></app-boton>
-  </div>
-</div>
+</nav>
+
+<router-outlet></router-outlet>

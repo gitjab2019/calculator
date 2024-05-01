@@ -1,0 +1,28 @@
+<div class="main">
+  <div class="header" [style.color]="headerColor">CALC</div>
+  <div class="visor">
+    <app-visor [_display]="_currentDisplay"></app-visor>
+  </div>
+  <div class="teclado">
+    <app-boton [_simbol]="'%'"></app-boton>
+    <app-boton [_simbol]="'CE'" (click)="clearOperations()"></app-boton>
+    <app-boton [_simbol]="'C'" (click)="clearOperations()"></app-boton>
+    <app-boton [_simbol]="'/'" (click)="getValue($event)"></app-boton>
+    <app-boton [_simbol]="'7'" (click)="getValue($event)"></app-boton>
+    <app-boton [_simbol]="'8'" (click)="getValue($event)"></app-boton>
+    <app-boton [_simbol]="'9'" (click)="getValue($event)"></app-boton>
+    <app-boton [_simbol]="'*'" (click)="getValue($event)"></app-boton>
+    <app-boton [_simbol]="'4'" (click)="getValue($event)"></app-boton>
+    <app-boton [_simbol]="'5'" (click)="getValue($event)"></app-boton>
+    <app-boton [_simbol]="'6'" (click)="getValue($event)"></app-boton>
+    <app-boton [_simbol]="'-'" (click)="getValue($event)"></app-boton>
+    <app-boton [_simbol]="'1'" (click)="getValue($event)"></app-boton>
+    <app-boton [_simbol]="'2'" (click)="getValue($event)"></app-boton>
+    <app-boton [_simbol]="'3'" (click)="getValue($event)"></app-boton>
+    <app-boton [_simbol]="'+'" (click)="getValue($event)"></app-boton>
+    <app-boton [_simbol]="'+/-'"></app-boton>
+    <app-boton [_simbol]="'0'" (click)="getValue($event)"></app-boton>
+    <app-boton [_simbol]="','"></app-boton>
+    <app-boton [_simbol]="'='" (click)="getValue($event)"></app-boton>
+  </div>
+</div>
